@@ -18,7 +18,7 @@ if len(codigo_ice10) == 5 or len(codigo_ice10) == 6:
     if codigo_ice10[3] == ".":
         if primeros_3_carcteres[0] in a_l:
             monto_agregado = monto_base + 25000
-            total = ((int(codigo_ice10[-1]) * monto_agregado) / 100) + monto_agregado
+            total = ((int(codigo_ice10[4:]) * monto_agregado) / 100) + monto_agregado
             if primeros_3_carcteres[0] == "A" or primeros_3_carcteres[0] == "B":
                 descripcion = "Ciertas enfermedades infecciosas y parasitarias"
             elif primeros_3_carcteres[0] == "C":
@@ -59,7 +59,7 @@ if len(codigo_ice10) == 5 or len(codigo_ice10) == 6:
                 descripcion = "Enfermedades de la piel y del tejido subcutáneo"
         elif primeros_3_carcteres[0] in m_z:
             monto_agregado = monto_base + 40000
-            total = ((int(codigo_ice10[-1]) * monto_agregado) / 100) + monto_agregado
+            total = ((int(codigo_ice10[4:]) * monto_agregado) / 100) + monto_agregado
             if codigo_ice10[0] == "M":
                 descripcion = "Enfermedades del sistema osteomuscular y del tejido conjuntivo"
             elif codigo_ice10[0] == "N":
@@ -89,7 +89,7 @@ if len(codigo_ice10) == 5 or len(codigo_ice10) == 6:
                 descripcion = "Factores que influyen en el estado de salud y contacto con los servicios de salud"
         elif primeros_3_carcteres[0] in u:
             monto_agregado = monto_base + 100000
-            total = ((int(codigo_ice10[-1]) * monto_agregado) / 100) + monto_agregado
+            total = ((int(codigo_ice10[4:]) * monto_agregado) / 100) + monto_agregado
             descripcion= "Códigos para propósitos especiales"
         else:
             print("Codigo no valido")
