@@ -103,10 +103,10 @@ else:
 
 #Salidas
 if codigo_valido == True:
-    print("Beneficiario: ",nombre_del_paciente)
-    print("Codigo: ",codigo_ice10)
-    print("Capítulo: ",descripcion)
-    print("Monto a pagar: ",total)
+    print("Beneficiario:",nombre_del_paciente)
+    print("Codigo:",codigo_ice10)
+    print("Capítulo:",descripcion)
+    print("Monto a pagar:",total)
 
 
 
