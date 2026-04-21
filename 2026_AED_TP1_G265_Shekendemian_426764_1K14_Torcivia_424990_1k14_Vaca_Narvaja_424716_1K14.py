@@ -27,7 +27,7 @@ if len(codigo_ice10) == 5 or len(codigo_ice10) == 6:
             elif primeros_3_carcteres == "D49": #Excepción de D
                 print("No se registra en el ICD10")
                 codigo_valido = False
-            elif primer_caracter == "D" and "0" <= primeros_3_carcteres[1] <= "4":
+            elif primer_caracter == "D" and "0" <= codigo_ice10[1] <= "4":
                 descripcion = "Tumores [neoplasias]"
             elif primer_caracter == "D" and codigo_ice10[1] >= "5" and codigo_ice10[1] != "9":
                 descripcion = "Enfermedades de la sangre y de los órganos hematopoyéticos, y ciertos trastornos que afectan el mecanismo de la inmunidad"
